@@ -26,6 +26,14 @@ We can think of classes as templates or blueprints for creating objects.
 Constructors are methods with the same class name and no return type.
 * they allow us to initialize new instances of objects according to available parameters and specs.
 
+* if there is no user-defined constructor, then Java will automatically throw in an empty (no-argument) constructor.
+
+## Inheritance
+We can think of the OOP paradigm of inheritance as objects that share/have common properties/characteristics with each other. However, these objects may have additional capabilities specific to themselves and make the different yet sharing some common elements.
+* similar to a "is-a" relationship
+
+* all members of the state and behaviors of a class can be inherited by the subclass.
+
 ## Composition
 This has to do with the __"has-a"__ relationship instead of a __"is-a"__ relationship like in the concept of inheritance.
 
