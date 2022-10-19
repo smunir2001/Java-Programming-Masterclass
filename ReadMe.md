@@ -20,3 +20,4 @@ This has to do with the mechanism that allows you to access restrict access to c
 * make internal changes without affecting code outside the subjective class.
 
 ## Polymorphism
+This is the OOP mechanism that gives programmers the capability to allow actions to act differently based on what object is acting.
