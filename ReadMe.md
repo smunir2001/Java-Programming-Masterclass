@@ -10,3 +10,5 @@ smunir2001@gmail.com | GitHub - Java Programming Masterclass | October 18th, 202
 
 ## Composition
 This has to do with the __"has-a"__ relationship instead of a __"is-a"__ relationship like in the concept of inheritance.
+
+Creating objects of objects --> object hierarchy
