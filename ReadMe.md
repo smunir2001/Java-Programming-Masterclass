@@ -47,3 +47,16 @@ This has to do with the mechanism that allows you to access restrict access to c
 
 ## Polymorphism
 This is the OOP mechanism that gives programmers the capability to allow actions to act differently based on what object is acting.
+
+## Reference vs. Object vs. Instance vs. Class
+Lets use the analogy of building a house to understand classes:
+
+A __class__ is basically a blueprint for a house, using the blueprint (plans) we can build as many houses as we like based on those plans.
+
+Each house you build (in other words instantiate using the __new__ operator) is an __object__, also known as an __instance__.
+
+Each house you build has an address (a physical location). In other words if you want to tell someone where you live, you give them your address (perhaps written on a piece of paper). This is known as a __reference__.
+
+You can copy that __reference__ as many times as you like but there is still just one house. In other words we are copying the paper that has the address on it not the house itself.
+
+We can pass __references__ as __parameters__ to __constructors__ and __methods__.
