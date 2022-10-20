@@ -136,3 +136,17 @@ __Instance methods__ belong to an instance of a class.
 To use an __instance method__ we have to instantiate the class first usually by using the __new__ keyword.
 * __instance methods__ can access instance methods and instance variables directly.
 * __instance methods__ can also access static methods and static variables directly.
+
+## Static vs. Instance variables
+### Static variables
+Declared by using the keyword __static__.
+* __Static variables__ are also known as __static member variables__.
+* every instance of that class __shares__ the same static variable.
+* if changes are made to that variable, all other instances will see the effect of the change.
+## Instance variables
+Do not use the __static__ keyword.
+* instance variables are also known as fields or member variables.
+* __instance variables__ belong to an instance of a class.
+    * every instance has it's own copy of an instance variable.
+    * every instance can have a different value (state).
+    * instance variables represent the state of an instance.
