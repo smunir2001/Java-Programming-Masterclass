@@ -60,3 +60,22 @@ Each house you build has an address (a physical location). In other words if you
 You can copy that __reference__ as many times as you like but there is still just one house. In other words we are copying the paper that has the address on it not the house itself.
 
 We can pass __references__ as __parameters__ to __constructors__ and __methods__.
+
+## this vs. super
+The keyword __super__ is used to access/call the parent class members (variables & methods).
+
+The keyword __this__ is used to call the current class members (variables & methods). This is required when we have a parameter with the same name as an instance variable (field).
+
+## this() vs super() call
+Use __this()__ to call a constructor from another overloaded constructor in the same class.
+* __this()__ call can be used only in a constructor
+* this call must be the first statement in a constructor
+* it's used with constructor chaining, in other words when one constructor calls another constructor, and helps to reduce duplicated code.
+
+The only way to call a parent constructor is by calling __super()__. This calls the parent constructor.
+* The Java compiler puts a default call to __super()__ if we don't add it, and it is always the no-args __super__ which is inserted by the compiler (constructor without argumnets).
+* the call to __super()__ must be the first statement in each constructor.
+
+Even abstract classes have constructors, although you can never instantiate an abstract class using the new keyword.
+* an abstract class is still a __super__ class, so its constructors run when someone makes an instance of a concrete subclass.
+* __NOTE:__ a constructor can have a __super()__ or __this()__ but never both.
