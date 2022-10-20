@@ -79,3 +79,48 @@ The only way to call a parent constructor is by calling __super()__. This calls 
 Even abstract classes have constructors, although you can never instantiate an abstract class using the new keyword.
 * an abstract class is still a __super__ class, so its constructors run when someone makes an instance of a concrete subclass.
 * __NOTE:__ a constructor can have a __super()__ or __this()__ but never both.
+
+## Method overloading vs. Method overriding
+### Method overloading
+Method __overloading__ means providing two or more separate methods in a class with the __same name__ but __different parameters__.
+* the method return type may or may not be different and that allows us to reuse the same method name.
+
+__Overloading__ is very handy, it reduces duplicated code and we don't have to remember multiple method names.
+* we can overload static and instance methods
+
+__Overloading__ does not have anything to do with polymorphism but Java developers often refer to overloading as Compile Time Polymorphism.
+* in other words the compiler decides which method is going to be called based on the method name, return type and argument list.
+
+Usually __overloading__ happens inside a single class, but a method can also be treated as __overloaded__ in the subclass of that class.
+* this is beacause the subclass inherits one version of the method from the parent class and then the subclass can have another overloaded version of the method.
+
+Methods will be considered overloaded if both follow the following rules:
+* methods must have the same method name
+* methods must have different parameters
+
+If methods follow the rules above then they may or may not
+* have different return types
+* have different access modifiers
+* throw different checked/unchecked exceptions
+
+### Method overriding
+Method __overriding__ means defining a method in a child class that already exists in the parent class with same signature (same name, same arguments).
+* by extending the parent class the child class gets all the methods defined in the parent class (those methods are also known as derived methods).
+
+Method __overriding__ is also known as __Runtime Polymorphism__ and __Dynamic Method Dispatch__, because the method that is going to be called is decided at runtime by the JVM.
+
+When we __override__ a method it is recommended to put __@Override__ immediately above the method definition. This is an annotation that the compiler reads and will then show us an error if we don't follow overriding rules correctly.
+* We __cannot override static__ methods, __only instance methods__.
+
+Method overriding rules:
+* must have the same name and same arguments
+* return type can be a subclass of the return type in the parent class
+* it cannot have a lower access modifier
+
+__Only inherited methods can be overridden__, in other words methods can be overriden only in child classes.
+
+__Constructors and private methods cannot be overridden__.
+
+Methods that are final cannot be overridden.
+
+A subclass can use __super.methodName()__ to call the superclass version of an overridden method.
