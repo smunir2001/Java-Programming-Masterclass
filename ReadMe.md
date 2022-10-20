@@ -124,3 +124,15 @@ __Constructors and private methods cannot be overridden__.
 Methods that are final cannot be overridden.
 
 A subclass can use __super.methodName()__ to call the superclass version of an overridden method.
+
+## Static vs. Instance methods
+__Static methods__ are declared using a __static__ modifier.
+
+__Static methods cannot__ access instance methods and instance variables directly.
+* they are usually used for operations that don't require any data from an instance of the class (from "this").
+
+__Instance methods__ belong to an instance of a class.
+
+To use an __instance method__ we have to instantiate the class first usually by using the __new__ keyword.
+* __instance methods__ can access instance methods and instance variables directly.
+* __instance methods__ can also access static methods and static variables directly.
