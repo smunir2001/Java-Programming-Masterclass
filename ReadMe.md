@@ -3,6 +3,7 @@ smunir2001@gmail.com | GitHub - Java Programming Masterclass | October 18th, 202
 ## Folder directory
 * ### Object-Oriented Programming (Part 1)
 * ### Object-Oriented Programming (Part 2)
+* ### Working with Images
 ## Object-Oriented Programming Concepts
 * classes
 * constructors
@@ -143,6 +144,7 @@ Declared by using the keyword __static__.
 * __Static variables__ are also known as __static member variables__.
 * every instance of that class __shares__ the same static variable.
 * if changes are made to that variable, all other instances will see the effect of the change.
+
 ## Instance variables
 Do not use the __static__ keyword.
 * instance variables are also known as fields or member variables.
@@ -150,3 +152,21 @@ Do not use the __static__ keyword.
     * every instance has it's own copy of an instance variable.
     * every instance can have a different value (state).
     * instance variables represent the state of an instance.
+
+## Working with Images
+Images are described by a width and a height, measured in pixels, and have a coordinate system that is independent of the drawing surface.
+
+Common tasks when working with images:
+* loading an extern GIF, PNG, JPEG image format file into the internal image representation used by Java 2D.
+
+* directly creating a Java 2D image and redering to it.
+
+* drawing the contents of a Java 2D image onto a drawing surface.
+
+* saving the contents of a Java 2D image to an external GIF, PNG, or JPEG image file.
+
+Two main classes that we must learn about to work with images in Java:
+* The __java.awt.Image__ class is the superclass that represents graphical images as rectangular arrays of pixels.
+
+* The __java.awt.image.BufferedImage__ class, which extends the __Image__ class to allow the application to operate directly with image data (for example, retrieving or setting up the pixel color). Applications can directly construct instances of this class.
+    * Since __BufferedImage__ is a subclass of __Image__ it can be rendered by the Graphics and Graphics 2D methods that accept an __Image__ parameter.
