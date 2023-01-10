@@ -4,6 +4,7 @@ smunir2001@gmail.com | GitHub - Java Programming Masterclass | October 18th, 202
 * ### Object-Oriented Programming (Part 1)
 * ### Object-Oriented Programming (Part 2)
 * ### Working with Images
+* ### Inner & Abstract Classes & Interfaces
 ## Object-Oriented Programming Concepts
 * classes
 * constructors
